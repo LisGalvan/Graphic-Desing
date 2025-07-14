@@ -1,0 +1,81 @@
+/* style.css */
+
+:root {
+  --bg: #f9f6f3;
+  --accent: #d4af7f;
+  --text: #2b2b2b;
+  --card-bg: #ffffff;
+  --card-border: #e0dcd6;
+  --font: 'Outfit', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--card-border);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-weight: 300;
+}
+
+main {
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.semester {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  transition: transform 0.2s;
+}
+
+.semester:hover {
+  transform: scale(1.01);
+}
+
+.semester h2 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
+.semester ul {
+  list-style: none;
+  padding: 0;
+}
+
+.semester ul li {
+  background: #f3efea;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #999;
+}
