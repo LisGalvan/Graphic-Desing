@@ -1,11 +1,11 @@
-/* style.css */
 
 :root {
-  --bg: #f9f6f3;
-  --accent: #d4af7f;
-  --text: #2b2b2b;
+  --bg: #f7f5fb;
+  --accent: #7e73c9;
+  --aqua: #89d8d3;
+  --text: #2f2f2f;
   --card-bg: #ffffff;
-  --card-border: #e0dcd6;
+  --card-border: #dad2e7;
   --font: 'Outfit', sans-serif;
 }
 
@@ -19,20 +19,21 @@ body {
 
 header {
   background-color: var(--card-bg);
-  border-bottom: 1px solid var(--card-border);
+  border-bottom: 2px solid var(--accent);
   text-align: center;
   padding: 2rem 1rem;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   color: var(--accent);
 }
 
 header p {
   margin: 0.5rem 0 0;
   font-weight: 300;
+  color: #555;
 }
 
 main {
@@ -43,22 +44,23 @@ main {
 
 .semester {
   background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  border-left: 5px solid var(--aqua);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-  transition: transform 0.2s;
+  box-shadow: 0 2px 5px rgba(126, 115, 201, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .semester:hover {
   transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(126, 115, 201, 0.2);
 }
 
 .semester h2 {
   margin-top: 0;
   color: var(--accent);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .semester ul {
@@ -67,8 +69,8 @@ main {
 }
 
 .semester ul li {
-  background: #f3efea;
-  padding: 0.5rem 1rem;
+  background: #efeafb;
+  padding: 0.6rem 1rem;
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
@@ -77,5 +79,5 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: #999;
+  color: #888;
 }
